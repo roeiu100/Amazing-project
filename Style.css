@@ -1,0 +1,63 @@
+
+        body{
+          background-image: url('https://media.architecturaldigest.com/photos/60d5e6657d0bcd2fb0bfe9cc/master/w_1920%2Cc_limit/Tennis%2520III%2520.jpg');
+          background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+        }
+        h2{
+            border: 2px solid powderblue;
+  padding: 30px;
+        }
+        div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 230px;;
+}
+
+div.desc {
+    background-color: blue;
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  max-width: auto;
+  height: auto;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+  
