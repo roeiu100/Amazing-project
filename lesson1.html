@@ -4,35 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        
     <title>Log in</title>
 </head>
 <body>
-    
+    <style> 
+        body{
+          background-image: url('https://media.architecturaldigest.com/photos/60d5e6657d0bcd2fb0bfe9cc/master/w_1920%2Cc_limit/Tennis%2520III%2520.jpg');
+          background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+        }
+        h2{
+            border: 2px solid powderblue;
+  padding: 30px;
+        }
+        div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 230px;;
+}
+
+div.desc {
+    background-color: blue;
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+
+  .responsive {
+    max-width: 100%;
+  height: auto;
+  }
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        </style>
     <h1 id="title">Log in</h1>
-    <p><input placeholder="User Name" type="text"><input placeholder="Password" type="text"></p>
-    <button>approve</button>
-    <h2>Welcome tennis player</h2>
+    <p><input placeholder="User Name" type="text"></p>
+        <break>     </break>
+        <p><input placeholder="Password" type="text"></p>
+    <button>Log In</button>
+    <h2 style="background-color:yellowgreen;">Welcome tennis player</h2>
    <h1> <input placeholder="Write your status of the day" type="text">
    </h1>
-    <h2><img height="300px" width="400px"   src="https://cloudfront-us-east-1.images.arcpublishing.com/opb/OUYBYLMINZPBFAQI64RONGNXV4.jpg" alt="אריה">
+   <button>Post</button>
+    <h2><img id="Federer" height="auto" width="400px"   src="https://cloudfront-us-east-1.images.arcpublishing.com/opb/OUYBYLMINZPBFAQI64RONGNXV4.jpg" alt="אריה">
 </h2>
     <div>
-        <hr>
-        <img  height="600px" width="1300px" src="https://www.tennisnet.com/fileadmin/_processed_/e/e/csm_laver_cup_berlin_b765a76a1e.jpg" alt="Lavercup">
-<p>Here you can choose your favoirte player and learn about him. just click the player</p>
-<a href="https://en.wikipedia.org/wiki/Roger_Federer">
-<img height="300px" width="400px"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyf0eBk9fMzuxlFrlOXl-Nk5-E3UWepJenug&usqp=CAU" alt="Federer">
-</a>
-<a href="https://en.wikipedia.org/wiki/Rafael_Nadal">
-    <img height="300px" width="400px"  src="https://www.atptour.com/-/media/images/news/2022/11/17/14/22/nadal-turin-2022-thursday.jpg" alt="Nadal">
-    </a>
-    <break></break>
-    <a href="https://en.wikipedia.org/wiki/Novak_Djokovic">
-        <img height="300px" width="400px"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9MDGcWoHlZlr_0in5lPtAAKmKCGatVpJ_g&usqp=CAU" alt="Djocovich">
-        </a>
-        <a href="https://en.wikipedia.org/wiki/Andy_Murray">
-            <img height="300px" width="400px"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Andy_Murray_%2844087043305%29.jpg/800px-Andy_Murray_%2844087043305%29.jpg" alt="Marry">
-            </a>
+        <hr height="20px">
+        <img   height="auto" width="1300px" src="https://www.tennisnet.com/fileadmin/_processed_/e/e/csm_laver_cup_berlin_b765a76a1e.jpg" alt="Lavercup">
+<h3 style="background-color:rgb(255, 255, 255);">Here you can choose your favoirte player and learn about him. just click the player</h3>
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Roger_Federer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyf0eBk9fMzuxlFrlOXl-Nk5-E3UWepJenug&usqp=CAU" alt="Roger_Federer" width="600" height="400">
+      </a>
+      <div class="desc">Roger Federer</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Rafael_Nadal">
+        <img src="https://www.atptour.com/-/media/images/news/2022/11/17/14/22/nadal-turin-2022-thursday.jpg" alt="Rafael_Nadal" width="600" height="400">
+      </a>
+      <div class="desc">Rafael Nadal</div>
+    </div>
+  </div>
+    
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Novak_Djokovic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9MDGcWoHlZlr_0in5lPtAAKmKCGatVpJ_g&usqp=CAU" alt="Novak_Djokovic" width="600" height="400">
+          </a>
+          <div class="desc">Novak Djokovic</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Andy_Murray">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Andy_Murray_%2844087043305%29.jpg/800px-Andy_Murray_%2844087043305%29.jpg" alt="Andy murray" width="600" height="400">
+          </a>
+          <div class="desc">Andy muarry</div>
+        </div>
+      </div>
+       
 </div>
+<div><a href="#Federer">up</a></div>
 </body>
 </html>
