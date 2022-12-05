@@ -1,16 +1,34 @@
-
-        body{
-          background-image: url('https://media.architecturaldigest.com/photos/60d5e6657d0bcd2fb0bfe9cc/master/w_1920%2Cc_limit/Tennis%2520III%2520.jpg');
-          background-repeat: no-repeat;
+body {
+  background-image: url('https://media.architecturaldigest.com/photos/60d5e6657d0bcd2fb0bfe9cc/master/w_1920%2Cc_limit/Tennis%2520III%2520.jpg');
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-size: 100% 100%;
-        }
-        h2{
-            border: 2px solid powderblue;
-  padding: 30px;
-        }
-        div.gallery {
+  margin:0;
+}
+
+.border {
+  margin:auto;
+  width: 30%;
+  border: 3px solid green;
+  padding: 0;
+  
+}
+.img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+ 
+}
+h3{
+  background-color:azure;
+  border: 3px solid rgba(151, 151, 151, 0.877);
+  
+  padding: 10px;
+  opacity:0.8;
+}
+div.gallery {
   border: 1px solid #ccc;
 }
 
@@ -20,13 +38,16 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: 230px;;
+  height: 230px;
+  margin:0;
 }
 
 div.desc {
-    background-color: blue;
+  background-color:rgb(48, 126, 195);
   padding: 15px;
   text-align: center;
+  opacity:0.8;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 * {
@@ -39,25 +60,63 @@ div.desc {
   width: 24.99999%;
   max-width: auto;
   height: auto;
+  
 }
 
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.button {
+  background-color: #4CAF50; /* Green */
+  border: 2px solid green;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-table, td, th {  
-  border: 1px solid #ddd;
-  text-align: left;
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
 }
 
-table {
-  border-collapse: collapse;
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
-th, td {
-  padding: 15px;
+li {
+  float: left;
 }
-  
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
