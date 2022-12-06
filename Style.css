@@ -1,18 +1,39 @@
-body {
-  background-image: url('https://media.architecturaldigest.com/photos/60d5e6657d0bcd2fb0bfe9cc/master/w_1920%2Cc_limit/Tennis%2520III%2520.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-size: 100% 100%;
+body { 
   margin:0;
 }
-
+.background{
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+.mainback{
+  /* background-image: url('https://media.architecturaldigest.com/photos/60d5e6657d0bcd2fb0bfe9cc/master/w_1920%2Cc_limit/Tennis%2520III%2520.jpg'); */
+  background: black;
+  /* display: grid;
+  place-items: center;
+  height: 10%;
+  margin: 0;
+  overflow: hidden; */
+}
+.playersback {
+  background-image: url('https://media.istockphoto.com/id/172273100/photo/40-love.jpg?b=1&s=170667a&w=0&k=20&c=z5e2Yk-F1blx2NLClfA1m7-1eeZt1wQU5HcmuftuF8A=');
+  height: 40%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footerback{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqn5SUSVk3zr0FAwaL6rosBOCKrhAKMX4-Gw&usqp=CAU');
+  height: 320px; 
+}
 .border {
   margin:auto;
-  width: 30%;
-  border: 3px solid green;
-  padding: 0;
-  
+  width:max-content;
+  background-color:seashell;
+  border: 3px solid gainsboro;
+  padding: 5px;
+  opacity: 0.8;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .img1{
   display: block;
@@ -22,45 +43,70 @@ body {
  
 }
 h3{
+  margin: 0;
   background-color:azure;
-  border: 3px solid rgba(151, 151, 151, 0.877);
-  
+  border: 3px solid rgba(151, 151, 151, 0.877); 
   padding: 10px;
-  opacity:0.8;
+  opacity:0.8; 
 }
+.container {
+  position: relative;
+  text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 div.gallery {
-  border: 1px solid #ccc;
+  border: 4px solid rgba(44, 64, 152, 0.813);
+  border-radius: 12px;
+  
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 5px solid rgba(0, 0, 122, 0.644);
 }
 
 div.gallery img {
+  
   width: 100%;
-  height: 230px;
+  height: 80%;
   margin:0;
 }
-
 div.desc {
   background-color:rgb(48, 126, 195);
-  padding: 15px;
+  padding: 5px;
   text-align: center;
   opacity:0.8;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 80%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+@media screen and (max-width:530px)
+{   
+.players { 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
-* {
+
+}
+* { 
   box-sizing: border-box;
 }
 
 .responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-  max-width: auto;
-  height: auto;
-  
+  padding:  10px;
+  width: 50%; 
+  height: auto; 
 }
 
 .button {
@@ -92,8 +138,9 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  overflow:inherit;
+  background-color: rgb(101, 101, 101);
+  opacity: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -116,7 +163,80 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #5e8e7c;
+}
+.active:hover {
+  background-color: #1cce8d;
 }
 
+.change{
+  background-color: crimson;
+  width: 100px;
+  height: 100px;
+  margin: 5px;  
+
+}
+
+.column
+{
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width:1000px)
+{     
+        .column
+        {
+          display: flex;
+          flex-direction: row;
+        }
+}
+ /* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: "Raleway", cursive;
+  font-weight: 100;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to right, black, #eee, black);
+  white-space: nowrap;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  background: radial-gradient(ellipse closest-side, #444, black);
+  z-index: -1;
+}
+h1 a {
+  background: black;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  letter-spacing: 30px;
+  color: white;
+  animation: comein 1.5s 1 ease-in-out forwards;
+}
+
+@keyframes comein {
+  0% {
+    letter-spacing: 80px;
+    color: rgba(255, 255, 255, 0);
+  }
+  70% {
+    letter-spacing: 20px;
+  }
+  100% {
+    letter-spacing: 25px;
+    color: rgba(255, 255, 255, 1);
+  }
+} */
 

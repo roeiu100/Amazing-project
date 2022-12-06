@@ -11,7 +11,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(101, 101, 101);
+    opacity: 0.94;
     position: fixed;
     top: 0;
     width: 100%;
@@ -34,8 +35,12 @@ ul {
   }
   
   .active {
-    background-color: #04AA6D;
+    background-color: #5e8e7c;
   }
+  .active:hover {
+    background-color: #1cce8d;
+  }
+  
   .button {
     background-color: #4CAF50; /* Green */
     border: 2px solid green;
@@ -61,9 +66,7 @@ ul {
     background-color: #4CAF50;
     color: white;
   }
-  .container {
-    
-  }
+  
   
   .bottomright {
   position: absolute;
